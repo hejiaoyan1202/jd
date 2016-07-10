@@ -1,0 +1,158 @@
+/*公共类*/
+* {
+    margin: 0;
+    padding: 0;
+    /*在移动端：盒模型默认不包括边框，避免加边框后出现横向滚动条，让盒模型包含边框*/
+    box-sizing: border-box;
+    /*在移动端：a链接等点击按下左键时，会出现背景色，可修改颜色或者去掉*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Microsoft YaHei';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+input {
+    /*清除默认边线*/
+    outline: none;
+    border: 0;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.border-right {
+    border-right: 1px solid #e0e0e0;
+}
+
+.border-top {
+    border-top: 1px solid #e0e0e0;
+}
+
+/*底部切换*/
+
+#layout {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    /*height: 1500px;*/
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+#layout > #footer {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+}
+
+#layout > #footer > ul>.icon-home {
+    width: 25%;
+    height: 44px;
+    float: left;
+    text-align: center;
+}
+#layout > #footer > ul>.icon-home>a>img{
+    width: 57px;
+    height: 44px;
+}
+
+#layout > #footer > ul>.icon-catergry {
+    width: 25%;
+    height: 44px;
+    float: left;
+    text-align: center;
+}
+#layout > #footer > ul>.icon-catergry>a>img{
+    width: 57px;
+    height: 44px;
+}
+#layout > #footer > ul>.icon-car {
+    width: 25%;
+    height: 44px;
+    float: left;
+    text-align: center;
+}
+#layout > #footer > ul>.icon-car>a>img{
+    width: 57px;
+    height: 44px;
+}
+#layout > #footer > ul>.icon-me {
+    width: 25%;
+    height: 44px;
+    float: left;
+    text-align: center;
+}
+#layout > #footer > ul>.icon-me>a>img{
+    width: 57px;
+    height: 44px;
+}
+
+
+/*返回顶部*/
+#layout>.top{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+#layout>.top>a>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+

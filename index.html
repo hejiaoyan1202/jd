@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--视口是移动端虚拟的一个容器，让pc端显示移动端不缩放-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--引入 公共类 base.css-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <!--引入首页index.css-->
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <title>MyJD.com</title>
+</head>
+<body>
+<!--布局容器-->
+<div id="layout">
+    <!--导航栏-->
+    <header id="topbar">
+        <div id="nav">
+            <i href="#" class="icon-logo"></i>
+            <!-- 由于移动端点击text时，需调用输入法，因此需用表单 form-->
+            <form class="search" action="" method="post">
+                <i class="icon-search"></i>
+                <input type="search"/>
+            </form>
+            <a class="login" href="#">登录</a>
+        </div>
+    </header>
+    <!--/导航栏-->
+    <!--轮播图-->
+    <section id="slide">
+        <ul class="clearfix">
+            <li><a href="#"><img src="images/l8.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l1.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l2.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l3.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l4.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l5.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l6.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l7.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l8.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/l1.jpg" alt=""/></a></li>
+        </ul>
+        <ul>
+            <li class="now"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </section>
+    <!--/轮播图-->
+
+    <!--商品分类导航-->
+    <section id="category" class="clearfix">
+        <ul>
+            <li><a href="#"><img src="images/nav1.png" alt=""/> <span>  送货到家 </span> </a></li>
+            <li><a href="#"><img src="images/nav2.png" alt=""/> <span>  京东超市 </span> </a></li>
+            <li><a href="#"><img src="images/nav3.png" alt=""/> <span>  个人中心 </span> </a></li>
+            <li><a href="#"><img src="images/nav4.png" alt=""/> <span>  充值中心 </span> </a></li>
+            <li><a href="#"><img src="images/nav5.png" alt=""/> <span>  领券     </span> </a></li>
+            <li><a href="#"><img src="images/nav6.png" alt=""/> <span>  全球购   </span> </a></li>
+            <li><a href="#"><img src="images/nav7.png" alt=""/> <span>  猜你喜欢 </span> </a></li>
+            <li><a href="category.html"><img src="images/nav0.png" alt=""/> <span>  全部     </span> </a></li>
+        </ul>
+
+    </section>
+    <!--/商品分类导航-->
+
+    <!--商品展示-->
+    <main id="prudocuts">
+        <!--限时抢购-->
+        <section class="prudocut clearfix">
+            <div class="prudocut-tile clearfix">
+                <div class="pull-left">
+                    <i class="seckill-icon"></i>
+                    <span class="seckill-name">掌上秒杀</span>
+                    <span class="seckill-time">
+                        <span>0</span>
+                        <span>5</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </span>
+                </div>
+                <div class="pull-right"><a href="category.html">更多></a></div>
+            </div>
+            <div class="prudocut-content clearfix">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/detail01.jpg" alt=""/>
+
+                            <p>
+                                <del>￥100.00</del>
+                            </p>
+
+                            <p>￥10.00</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/detail02.jpg" alt=""/>
+
+                            <p>
+                                <del>￥100.00</del>
+                            </p>
+
+                            <p>￥10.00</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/detail01.jpg" alt=""/>
+
+                            <p>
+                                <del>￥100.00</del>
+                            </p>
+
+                            <p>￥10.00</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <!--京东超市-->
+        <section class="prudocut clearfix">
+            <div class="prudocut-tile">
+                <h3>京东超市</h3>
+            </div>
+            <div class="prudocut-content border-top clearfix">
+                <ul>
+                    <li class="width-50 pull-left">
+                        <a href="#">
+                            <img class="width-100 height-100" src="images/cp1.jpg" alt=""/>
+                        </a>
+                    </li>
+
+                    <li class="width-50 pull-right ">
+                        <a href="#">
+                            <img class="width-100 height-100" src="images/cp2.jpg" alt=""/>
+                        </a>
+                    </li>
+
+                    <li class="width-50 pull-right border-top">
+                        <a href="#">
+                            <img class="width-100 height-100" src="images/cp3.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </section>
+
+        <!--京东超市-->
+        <section class="prudocut clearfix">
+            <div class="prudocut-tile">
+                <h3>京东超市</h3>
+            </div>
+
+            <div class="prudocut-content border-top clearfix">
+                <ul>
+                    <li class="width-50 pull-right">
+                        <a href="#">
+                            <img class="width-100 height-100 " src="images/cp4.jpg" alt=""/>
+                        </a>
+                    </li>
+
+                    <li class="width-50 pull-right ">
+                        <a href="#">
+                            <img class="width-100 height-100 " src="images/cp5.jpg" alt=""/>
+                        </a>
+                    </li>
+
+                    <li class="width-50 pull-left ">
+                        <a href="#">
+                            <img class="width-100 height-100 " src="images/cp6.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </section>
+
+        <!--京东超市-->
+        <section class="prudocut clearfix">
+            <div class="prudocut-tile">
+                <h3>京东超市</h3>
+            </div>
+            <div class="prudocut-content border-top clearfix">
+                <ul>
+                    <li class="width-50 pull-left">
+                        <a href="#">
+                            <img class="width-100 height-100" src="images/cp1.jpg" alt=""/>
+                        </a>
+                    </li>
+
+                    <li class="width-50 pull-right ">
+                        <a href="#">
+                            <img class="width-100 height-100" src="images/cp2.jpg" alt=""/>
+                        </a>
+                    </li>
+
+                    <li class="width-50 pull-right border-top">
+                        <a href="#">
+                            <img class="width-100 height-100" src="images/cp3.jpg" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </section>
+    </main>
+    <!--/商品展示-->
+    <!--底部导航-->
+    <footer id="footer">
+        <ul>
+            <li class="icon-home active">
+                <a href="index.html">
+                    <img src="images/icon-home01.png" alt=""/>
+                </a>
+            </li>
+            <li class="icon-catergry">
+                <a href="category.html">
+                    <img src="images/icon-catergry.png" alt=""/>
+                </a>
+            </li>
+            <li class="icon-car">
+                <a href="car.html">
+                    <img src="images/icon-cart.png" alt=""/>
+                </a>
+            </li>
+            <li class="icon-me">
+                <a href="car.html">
+                    <img src="images/icon-me.png" alt=""/>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!--返回顶部-->
+    <div class="top">
+        <a href="#slide">
+            <img src="images/scroll-to-top-icon.png" alt=""/>
+        </a>
+    </div>
+</div>
+
+
+<!--&lt;!&ndash;引入jquery.js&ndash;&gt;-->
+<!--<script src="js/jquery.js"></script>-->
+<!--引入 自己书写的首页 index.js-->
+<script src="js/index.js"></script>
+</body>
+</html>

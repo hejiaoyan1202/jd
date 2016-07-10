@@ -1,0 +1,128 @@
+#layout {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    /*height: 600px;*/
+    margin: 0 auto;
+    /*background-color: #e0e0e0;*/
+    position: relative;
+}
+
+/*顶部导航*/
+#layout > #nav {
+    /*nav相对定位后，仍占位置 会出现滚动条*/
+    /*position: relative;*/
+    background: url("../images/header-bg.png") repeat-x;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+#layout > #nav > .icom-back {
+    width: 40px;
+    height: 44px;
+    background: url("../images/sprites.png") no-repeat -21px 0;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+    position: absolute;
+    top: 0;
+    padding: 12px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+#layout > #nav > form {
+    /*width: 100%;*/
+    padding: 8px 40px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#layout > #nav > form > input {
+    width: 100%;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+#layout > #nav > .icom-menu {
+    width: 40px;
+    height: 44px;
+    background: url("../images/sprites.png") no-repeat -60px 0;
+    background-size: 200px 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 10px;
+    /*让图片显示在内容区域,并把内容区域之外的背景图片剪切掉*/
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+/*顶部导航*/
+
+/*商品分类*/
+#layout > #category {
+    padding-top: 46px;
+    height: 600px;
+    overflow: hidden;
+}
+#layout > #category > .category-list{
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+#layout > #category > .category-list > ul > li {
+    width: 90px;
+    height: 50px;
+    border-bottom: 1px solid #c0c0c0;
+    text-align: center;
+    line-height: 50px;
+    background-color: #f0f0f0;
+
+    font-size: 14px;
+}
+#layout > #category > .category-list > ul > li > a {
+    display: inline-block;
+    width: 90px;
+    height: 49px;
+}
+#layout > #category > .category-list > ul > li.now a{
+    color: #d8505c;
+    background-color: #fff;
+}
+
+#layout > #category > .category-list > ul > li.now > a:hover {
+    color: #d8505c;
+    background-color: #fff;
+}
+ /*商品展示*/
+#layout > #category > .category-content{
+    /*右边图片设置浮动后，左边会出现文字环绕的效果，当设置overflow;hidden后，文字全部在右边区域显示-高级用法*/
+    overflow: hidden;
+    padding:15px 10px;
+}
+#layout > #category > .category-content>.picture>a{
+    display: block;
+}
+#layout > #category > .category-content>.picture>a>img{
+    width: 100%;
+    height: 100%;
+}
+#layout > #category > .category-content>.product{
+    margin-top: 10px;
+}
+#layout > #category > .category-content>.product>.product-title>h3{
+    background-color: #f0f0f0;
+    font-size: 15px;
+    color:#333;
+    padding: 5px 5px;
+    background: url("../images/li_bg.png") repeat-x;
+    margin-bottom: 3px;
+}
+#layout > #category > .category-content>.product>.product-content>ul>li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
